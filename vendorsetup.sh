@@ -32,6 +32,7 @@ add_lunch_combo cyanogen_jordan-eng
 add_lunch_combo cyanogen_legend-eng
 add_lunch_combo cyanogen_leo-eng
 add_lunch_combo cyanogen_liberty-eng
+add_lunch_combo cyanogen_photon-eng
 add_lunch_combo cyanogen_mango-eng
 add_lunch_combo cyanogen_mecha-eng
 add_lunch_combo cyanogen_mesmerizemtd-eng
