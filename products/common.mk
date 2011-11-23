@@ -98,6 +98,8 @@ PRODUCT_COPY_FILES += \
 
 ifdef CYANOGEN_WITH_GOOGLE
 
+ifdef FIX
+
     # use all present proprietary apk
     PRODUCT_COPY_FILES += $(shell test -f vendor/cyanogen/proprietary/*.apk && \
 	find vendor/cyanogen/proprietary -name '*.apk' \
@@ -118,6 +120,34 @@ ifdef CYANOGEN_WITH_GOOGLE
 	find vendor/cyanogen/proprietary -name '*.xml' \
 	-printf '%p:system/etc/permissions/%f ')
 
+else
+
+PRODUCT_COPY_FILES += \
+        vendor/cyanogen/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
+        vendor/cyanogen/proprietary/GenieWidget.apk:./system/app/GenieWidget.apk \
+        vendor/cyanogen/proprietary/GoogleBackupTransport.apk:./system/app/GoogleBackupTransport.apk \
+        vendor/cyanogen/proprietary/GoogleCalendarSyncAdapter.apk:./system/app/GoogleCalendarSyncAdapter.apk \
+        vendor/cyanogen/proprietary/GoogleContactsSyncAdapter.apk:./system/app/GoogleContactsSyncAdapter.apk \
+        vendor/cyanogen/proprietary/GoogleFeedback.apk:./system/app/GoogleFeedback.apk \
+        vendor/cyanogen/proprietary/GooglePartnerSetup.apk:./system/app/GooglePartnerSetup.apk \
+        vendor/cyanogen/proprietary/GoogleQuickSearchBox.apk:./system/app/GoogleQuickSearchBox.apk \
+        vendor/cyanogen/proprietary/GoogleServicesFramework.apk:./system/app/GoogleServicesFramework.apk \
+        vendor/cyanogen/proprietary/FOTAKill.apk:./system/app/FOTAKill.apk \
+        vendor/cyanogen/proprietary/LatinImeTutorial.apk:./system/app/LatinImeTutorial.apk \
+        vendor/cyanogen/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
+        vendor/cyanogen/proprietary/MediaUploader.apk:./system/app/MediaUploader.apk \
+        vendor/cyanogen/proprietary/NetworkLocation.apk:./system/app/NetworkLocation.apk \
+        vendor/cyanogen/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
+        vendor/cyanogen/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
+        vendor/cyanogen/proprietary/Talk.apk:./system/app/Talk.apk \
+        vendor/cyanogen/proprietary/Vending.apk:./system/app/Vending.apk \
+        vendor/cyanogen/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
+        vendor/cyanogen/proprietary/features.xml:./system/etc/permissions/features.xml \
+        vendor/cyanogen/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
+	vendor/cyanogen/proprietary/libvoicesearch.so:./system/lib/libvoicesearch.so
+
+endif 
+		
 else
     PRODUCT_PACKAGES += \
         Provision \
