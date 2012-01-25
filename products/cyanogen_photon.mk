@@ -25,7 +25,7 @@ CYANOGEN_WITH_GOOGLE := true
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
 # Release name and versioning
-PRODUCT_RELEASE_NAME := photon
+PRODUCT_RELEASE_NAME := photonic
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
 -include vendor/cyanogen/products/common_versions.mk
 
