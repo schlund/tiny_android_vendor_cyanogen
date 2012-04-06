@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2011, The Android Open Source Project
+** Copyright 2011, The CyanogenMod Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -18,11 +18,8 @@
 -->
 <resources>
 
-    <!-- Wide media profile available -->
-    <bool name="supportsWideProfile">true</bool>
-
-    <!-- Autofocus parameters -->
-    <string name="touchFocusParameter">mot-areas-to-focus</string>
-    <bool name="touchFocusNeedsRect">true</bool>
+    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not
+         specified -->
+    <string name="default_wallpaper_component">com.android.wallpaper/.nexus.NexusWallpaper</string>
 
 </resources>
