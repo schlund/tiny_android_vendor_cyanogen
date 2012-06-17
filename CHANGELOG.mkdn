@@ -65,6 +65,7 @@ Maintainers:
 * LGE Optimus Pro: arcee
 * LGE Optimus Sol: Kali-
 * LGE Optimus One: Adam Farden
+* U8150 (Ideos): Lalit Maganti and Alan Orth
 
 Translators:
 ------------
@@ -87,6 +88,7 @@ Translators:
 * Czech: Ondrej Zima
 * Turkish: Ethem Evlice (androidmeda)
 * Hungarian: Kalman Stipta (apeelme), Zsolt Kelemen (kelzsoca), Zsolt Villant (Keeperv85), Janos Horvath (hjanos1)
+* Dutch: Marco Brohet
 
 CHANGELOG (notable new features or fixes)
 ---------
